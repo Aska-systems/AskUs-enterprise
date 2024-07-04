@@ -2115,12 +2115,21 @@ input, select, textarea {
 		background-size: 128px 128px, 100% 100%, auto;
 	}
 
-	#promo-wrapper {
+	#promo-wrapper-enterprise {
 		position: relative;
 		background-image: url("images/overlay.png"), url("../../images/promo.jpg");
 		background-size: 192px 192px, cover;
 		background-position: top left, center center;
 		color: #fff;
+		text-align: center;
+		padding: 6em 0 6em 0;
+	}
+
+	#promo-wrapper {
+		position: relative;
+		background-color: #f6f8fb;
+		background-size: 192px 192px, cover;
+		background-position: top left, center center;
 		text-align: center;
 		padding: 6em 0 6em 0;
 	}
@@ -2358,6 +2367,35 @@ input, select, textarea {
 		}
 
 			#promo .button:hover {
+				border-color: rgba(255, 255, 255, 0.75);
+				background-color: rgba(255, 255, 255, 0.15);
+				color: #fff;
+			}
+
+	#promo-light {
+		background: rgba(255, 255, 255, 0.05);
+		border: solid 1px #27636B;
+		border-radius: 0.5em;
+		padding: 1.75em 2.5em 1.75em 2.5em;
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+	}
+
+		#promo-light h2 {
+			display: inline-block;
+			margin-right: 1em;
+			font-size: 1.75em;
+		}
+
+		#promo-light .button {
+			background: #fff;
+			border-color: rgba(255, 255, 255, 0);
+			color: #27636B;
+			font-size: 1.25em;
+		}
+
+			#promo-light .button:hover {
 				border-color: rgba(255, 255, 255, 0.75);
 				background-color: rgba(255, 255, 255, 0.15);
 				color: #fff;
